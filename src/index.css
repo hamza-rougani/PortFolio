@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600&family=Gabarito:wght@400;500&family=Inter:wght@300;400&family=Lato:wght@400;700&family=Onest:wght@400;500&family=Open+Sans:wght@300;400&family=Pacifico&family=Poppins:wght@300;400&family=Ubuntu:wght@300;700&display=swap');
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+font-family: 'Gabarito', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Onest', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+  width: 80%;
+  overflow: hidden;
+}
+.gen{
+  font-size: 1rem;
+}
+.gene{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 1.2rem;
+
+}
+.Dashboard{
+  width: 100%;
+  display: flex;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#linkB{
+  text-decoration: none;
+  color:black;
+}
+#linkW{
+  text-decoration: none;
+  color:white;
+}
+#icons{
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+#Gicons{
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.Menu{
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 10px;
+  position: fixed;
+}
+.fakemenu{
+  width: 20%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.Menu .presentation{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: rgba(239, 241, 241, 0.702);
+  position: relative;
+}
+.Menu .info{
+display: flex;
+flex-direction: column;
+gap: 3px;
+font-size: 0.9rem;
+}
+.Menu .logo{
+width: 60px;
+height: 60px;
+overflow: hidden;
+border-radius: 50%;
+border: 2px solid rgba(0, 0, 0, 0.2);
+
+}
+.Menu .status{
+position: absolute;
+left: 10px;
+bottom: 0px;
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.Menu .status .color{
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 127, 127);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.Menu .status .n{
+  font-size: 14px;
+  padding: 4px;
+  background-color: rgb(19, 155, 60);
+  border: 4px;
+  transition: 0.1s;
+  color: #fff;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(-4px);
+  left: 12px;
+  top: 10px;
+}
+.Menu .status .color:hover .n{
+opacity: 1;
+transform: translateY(0px);
+}
+.Menu #name{
+font-weight: bold;
+}
+.Menu #desc{
+color: rgb(146, 147, 147);
+padding: 2px;
+background-color: antiquewhite;
+}
+.Menu #ul{
+display: flex;
+flex-direction: column;
+list-style: none;
+padding: 0;
+font-size: 1rem;
+box-sizing: border-box;
+}
+.Menu #ul li{
+display: flex;
+gap: 10px;
+align-items: center;
+padding:7px 10px ;
+box-sizing: border-box;
+
+
+}
+.Menu #ul li:hover{
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+/* Profile */
+.Profile{
+  font-size: 1rem;
+  width: 100%;
+  
+}
+.Profile .background{
+  width: 100%;
+  height: 200px;
+  background-image:url("images/1641996122854.jfif") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+.Profile .background .info{
+
+  position: absolute;
+  bottom: -120px ;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+align-items: center;
+
+}
+.Profile .background .image{
+  width: 150px;
+  height: 150px;
+  border: 4px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  overflow: hidden;
+
+
+}
+
+.Profile .background .text{
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: center;
+
+
+}
+.Profile .background .name{
+  font-weight: bold;
+  display: flex;
+  gap: 4px;
+
+}
+
+.introduct{
+  margin-top: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.introduct .start{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.introduct .start h2,.introduct .start h3{
+margin: 0;
+display: flex;
+gap: 10px;
+}
+.introduct .start > div{
+  font-size: 1rem;
+  padding: 10px;
+  background-color: rgba(240, 234, 167, 0.336);
+  box-sizing: border-box;
+
+
+
+  
+}
+/* Profile */
+/* Projects */
+.Projects{
+  width: 100%;
+  box-sizing: border-box;
+  padding:10px;
+}
+.Projects .header .title{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Projects .header .title input{
+padding: 0.7em;
+width: 300px;
+border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.Projects .header .title .search{
+display: flex;
+
+}
+.Projects .header .title button{
+  padding: 0.7em;
+display: flex;
+align-items: center;
+border:1px solid rgba(0, 0, 0, 0.2);
+background: none;
+cursor: pointer;
+
+
+}
+.Projects .header .buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ align-items: center;
+}
+.Projects .header .buttonsum{
+  display: flex;
+  gap: 4px;
+
+  
+}
+
+.Projects .header .buttons button{
+  border:none;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 0.6em;
+}
+.Projects .header .buttons .intro{
+  margin-top: 20px;
+  width: 80%;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.Card{
+  width: 230px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  gap:7px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.1);
+}
+.Card .image{
+  width: 100%;
+  height: 50%;
+}
+.Card .info{
+ font-size: 1em;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ box-sizing: border-box;
+ padding: 10px;
+}
+.Card .info .title{
+font-weight: bold;
+}
+.Card .info .desc{
+opacity: 0.8;
+}
+.Card .info .tools{
+background-color: rgb(218, 222, 221);
+padding: 4px;
+font-size: 12px;
+width: max-content;
+}
+.Card .info button{
+  padding: 6px;
+  border: none;
+  background: #eeeeeb;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.Card .info button:hover{
+  background-color: #c6c6c1;
+}
+
+.Cards{
+display: grid;
+width: 100%;
+
+grid-template-columns: repeat(4,1fr);
+gap: 20px;
+box-sizing: border-box;
+padding: 20px;
+margin-top: 30px;
+}
+/* Projects */
+/* Skills */
+.Skills{
+  box-sizing: border-box;
+  padding: 10px;
+}
+.Skills .btns{
+ display: flex;
+ gap: 4px;
+}
+.Skills .btns button{
+  
+  padding:0.2rem 0.6em;
+  display: flex;
+  gap: 6px;
+  border: none;
+  background-color: black;
+  color: #fff;
+}
+/* .Skills .btns #white{
+  background-color: white;
+  border:1px solid rgba(0, 0, 0, 0.2);
+  color: #000;
+} */
+/* Skills */
+/* Contact */
+.Contact{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.Contact .c{
+ display: flex;
+ gap: 10px;
+ align-items: center;
+}
+.Contact .c a{
+  color: #000;
+}
+/* Contact */
+
+/* details */
+.Details{
+box-sizing: border-box;
+width: 100%;
+padding: 10px;
+}
+.Details #ul{
+list-style: none;
+display: flex;
+gap: 10px;
+
+}
+.Details .project_details #ul li{
+border: 1px solid rgba(0, 0, 0, 0.2);
+padding: 10px;
+cursor: pointer;
+}
+.Details ul #o{
+  border: 1px solid rgba(0, 0, 0, 0.498);
+  font-weight: bold;
+}
+
+.Details .line{
+display: flex;
+gap:10px;
+align-items: center;
+}
+.Details .block{
+display: flex;
+flex-direction: column;
+gap:10px;
+justify-content: center;
+width: 80%;
+}
+
+.Overview{
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 30px;
+}
+
+.Details .Overview h3 ,.Details .Overview h4{
+  margin: 0;
+}
+.Overview ul li{
+  padding: 5px;
+  }
+.diagrams{
+  width: 100%;
+}
+  
+.diagrams .diagramsc .img{
+  width: 60%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.diagrams .cont {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+  
+/* details */
+/* administrator */
+.CreateProject{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.CreateProject #ul{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  
+  }
+  .CreateProject .project_details #ul li{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  cursor: pointer;
+  }
+  .CreateProject ul #o{
+    border: 1px solid rgba(0, 0, 0, 0.498);
+    font-weight: bold;
+  }
+  
+  .CreateProject .line{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  }
+  .CreateProject .block{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  width: 80%;
+  }
+.CreateProject .Overview{
+ padding: 20px;
+ box-sizing: border-box;
+  }
+  .CreateProject .Overview .addline{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .CreateProject .Overview .addline .btns{
+    display: flex;
+    gap: 10px;
+  }
+  .CreateProject .Overview .btns .btn{
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    width: max-content;
+    cursor: pointer;
+    }
+  .CreateProject .Overview .btns .clean{
+    background-color: rgb(240, 40, 40);
+
+    }
+  .CreateProject .Overview .btns .add{
+    background-color: black;
+
+    }
+
+  .CreateProject .Overview .addline .btns{
+    display: flex;
+    gap: 10px;
+  }
+  .CreateProject .Overview .addline #comma{
+  color: #c6c6c1;
+  }
+
+  .CreateProject .Overview .addform{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+  }
+  .CreateProject .Overview .addform form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  }
+  .CreateProject .Overview #i{
+ border: 1px solid rgba(0, 0, 0, 0.2);
+ outline: none;
+ padding: 10px;
+  }
+  .CreateProject .post h3 ,.CreateProject .post p{
+margin: 0;
+  }
+  .CreateProject .post{
+display: flex;
+flex-direction: column;
+gap: 10px;
+box-sizing: border-box;
+margin-top: 10px;
+  }
+  .CreateProject .post p{
+    background-color: #ececea7e;
+    padding: 10px;
+    box-sizing: border-box;
+    width: max-content;
+  }
+  .CreateProject .post #ulPost{
+   margin: 0;
+  }
+  .CreateProject .post .generaleI{
+ width: 100%;
+display: flex;
+justify-content: center;
+  }
+  .CreateProject .post .image{
+ width: 50%;
+ height: 50%;
+  }
+  .CreateProject  .addImage{
+   display: flex;
+   gap:10px ;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   padding:8px 10px;
+   width:max-content ;
+   align-items: center;
+   cursor: pointer;
+  }
+  .CreateProject  .introduct .flex{
+   display: flex;
+   width: 80%;
+   justify-content: space-between;
+  }
+
+  /*Done */
+  .Done{
+  width: 100%;
+  }
+  .Done ul{
+   
+  }
+  .Done ul li{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 30%;
+   padding: 5px;
+   box-sizing: border-box;
+  }
+  .Done ul button {
+  padding:4px 10px ;
+  margin: 10px 8px;
+  background-color: #000;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+  }
+  
+  /*Done */
+/* administrator */
+
+/* notification */
+.notification{
+  position: absolute;
+  width: max-content;
+  box-sizing: border-box;
+  padding: 10px;
+  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ 
+ border-radius: 10px;
+ top: 20px;
+ right: 20px;
+}
+.true{
+  background-color: rgba(12, 171, 54, 0.296);
+}
+.false{
+  background-color: rgba(255, 8, 8, 0.262);
+}
+
+
+/* notification */
