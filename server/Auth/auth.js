@@ -1,5 +1,5 @@
-import jwt from "jsonwebtoken";
-function isAthenticated(req, res, next) {
+const jwt = require("jsonwebtoken")
+module.exports = async function isAthenticated(req, res, next) {
   const token =req.headers['authorization']?.split(' ')[1];
   // console.log(token)
   // Check for token in headers or cookies
@@ -18,4 +18,3 @@ function isAthenticated(req, res, next) {
 }
 
 
-export default isAthenticated

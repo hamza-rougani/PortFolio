@@ -3,7 +3,7 @@ import { Link, useLocation, useParams } from 'react-router-dom'
 import Overview from './Overview';
 import Problem from './Problem';
 import Solution from './Solution';
-import Diagrams from './Diagrams';
+import Diagrams from './diagrams';
 import Realization from './Realization';
 import axios from 'axios';
 function Details() {

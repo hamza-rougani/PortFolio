@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose =  require("mongoose");
 const NewsProjectSchema = mongoose.Schema({
     NewsProjectImage:String,
     create_at:{
@@ -6,4 +6,4 @@ const NewsProjectSchema = mongoose.Schema({
         default:Date.now(),
     }
 })
-export default mongoose.model("NewsProject",NewsProjectSchema)
+module.exports =NewsProject= mongoose.model("NewsProject",NewsProjectSchema)

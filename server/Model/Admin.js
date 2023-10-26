@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+const mongoose =  require("mongoose");
 
 const ShcemaAdmin = mongoose.Schema({
     username:String,
@@ -6,4 +6,4 @@ const ShcemaAdmin = mongoose.Schema({
     isAdmin:Boolean,
 })
 
-export default mongoose.model("admin",ShcemaAdmin)
+module.exports =User= mongoose.model("admin",ShcemaAdmin)

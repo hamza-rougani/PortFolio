@@ -1,20 +1,22 @@
-import express from "express";
-import mongoose from "mongoose";
-import Project from "./Model/Projects.js"
-import multer from "multer"
-import path from "path"
-import Post from "./Model/Post.js"
-import User from "./Model/Admin.js"
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken"
-import isAthenticated from "./Auth/auth.js"
-import NewsPost from "./Model/NewsPost.js";
-import NewsProject from "./Model/NewsProject.js";
+const express=  require("express");
+const mongoose =  require("mongoose");
+const Project=  require("./Model/Projects.js")
+const multer=  require("multer")
+const path = require("path")
+const Post=  require("./Model/Post.js")
+const User=  require("./Model/Admin.js")
+const bcrypt=  require("bcrypt")
+const jwt = require("jsonwebtoken")
+const isAthenticated = require("./Auth/auth.js")
+const NewsPost=  require("./Model/NewsPost.js");
+const NewsProject=  require("./Model/NewsProject.js");
+require('dotenv').config();
+const Url=process.env.VITE_API_BASE_URL
 const app = express();
-// Import the cors middleware
-import cors from "cors"
+// const the cors middleware
+const cors = require("cors")
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with the actual origin of your client app
+    origin: Url, // Replace with the actual origin of your client app
     methods: 'GET,POST,PUT,DELETE',
     // optionsSuccessStatus: 200, // Some legacy browsers (IE11) choke on a 204 response
   }));
@@ -27,7 +29,7 @@ mongoose.connect("mongodb+srv://Portfolio:zQto5FWhSv1BcBQ8@cluster0.9vyuq1d.mong
 .then(()=>console.log("connection sucessfully to mongodb"))
 .catch(()=>console.log("connection failed"))
 // const fileFilter = (req, file, cb) => {
-//   // Get the file extension from the original file name
+//   // Get the file extension  require(the original file name
 //   const fileExtension = file.originalname.split('.').pop().toLowerCase();
 
 //   // Check if the file extension is 'txt'
@@ -39,9 +41,11 @@ mongoose.connect("mongodb+srv://Portfolio:zQto5FWhSv1BcBQ8@cluster0.9vyuq1d.mong
 //   }
 // };
 // Set up Multer for handling file uploads
+
+
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null, './uploads');
+      cb(null, "../uploads");
     },
     filename: (req, file, cb) => {
       const extname = path.extname(file.originalname);
@@ -307,7 +311,7 @@ app.put("/updatepost/:id",isAthenticated,upload.fields([{name:"image",maxCount:1
 app.post('/register', upload.none(), async (req, res) => {
   try {
     const count =await User.find().count()
-    if(count==1){
+    if(count==0){
   const {username,password} = req.body;
 
   // Hash the user's password
