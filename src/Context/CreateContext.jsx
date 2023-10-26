@@ -5,8 +5,15 @@ const CreateContext = createContext({
     problem:null,
     solution:null,
     diagrams:null,
+    ImagesD:null,
+    ImagesR:null,
+    Image:null,
     realization:null,
     notification:null,
+    token:null,
+    NewsPost:null,
+    NewsProject:null,
+    setToken:()=>{},
     setintroduct:()=>{},
     setoverview:()=>{},
     setproblem:()=>{},
@@ -14,6 +21,11 @@ const CreateContext = createContext({
     setdiagrams:()=>{},
     setrealization:()=>{},
     setnotification:()=>{},
+    setImagesD:()=>{},
+    setImagesR:()=>{},
+    setImage:()=>{},
+    setNewsPost:()=>{},
+    setNewsProject:()=>{},
 })
 
 export default CreateContext

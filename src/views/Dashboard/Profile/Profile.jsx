@@ -5,10 +5,10 @@ function Profile() {
     <div className='Profile'>
       <div className='background'>
         <div className='info'>
-        <div className='image'><img src="images/profile.png" alt="" /></div>
+        <div className='image'><img src={`${import.meta.env.VITE_API_BASE_URL}/images/profile.png`} alt="" /></div>
         <div className='text'>
-            <span className='gene name'><div id="icons"><img src="images/agitant-la-main.png" alt="" /></div>Hi, I am HAMZA ROUGANI</span>
-            <span className='gene desc'><div id="icons"><img src="images/programmation.png" alt="" /></div>Developer Full Stack</span>
+            <span className='gene name'><div id="icons"><img src={`${import.meta.env.VITE_API_BASE_URL}/images/agitant-la-main.png`} alt="" /></div>Hi, I am HAMZA ROUGANI</span>
+            <span className='gene desc'><div id="icons"><img src={`${import.meta.env.VITE_API_BASE_URL}/images/programmation.png`} alt="" /></div>Developer Full Stack</span>
         </div>
         
         </div>
@@ -22,7 +22,7 @@ function Profile() {
         <h3 className='gene'>Education</h3>
         <div>Full Stack Developer Graduate from OFPPT (2023)</div>
         <h3 className='gene'>Location</h3>
-        <div>agadir,tikiouine, assaka, Based in Morocco</div>
+        <div>Agadir, Tikiouine ,Morocco</div>
         <h3 className='gene'>About Me</h3>
         <div>I have always been fascinated by the dynamic world of web development and the endless possibilities it offers. As a Full Stack Developer, I enjoy the challenge of working with both the front-end and back-end technologies, bringing ideas to life and ensuring seamless user experiences.</div>
         <div>With a strong foundation in web development, I'm constantly seeking opportunities to expand my knowledge, refine my skills, and take on new projects that allow me to grow as a develop</div>

@@ -1,10 +1,19 @@
 import React from 'react'
 
-function Solution() {
+function Solution(e) {
   return (
     <div>
-      <h4>Solution</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga recusandae soluta voluptates eum quisquam consequatur autem quas! Adipisci, autem at vel nam eos, ullam, nisi exercitationem ex temporibus minima ab!</p>
+      {e.p.title?
+      e.p.title.map((o,index)=>{
+        return(
+        <div className='Introduct block'><h4 id='h4p'>{o}</h4>
+        <span id='paragraph'>{e.p.desc[index]}</span>
+        
+           </div>
+           )
+      })
+      
+      :""}
     </div>
   )
 }
